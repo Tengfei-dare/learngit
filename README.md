@@ -2,8 +2,8 @@
 
 Mainly based on
 
-- [(git tutorial)][https://www.liaoxuefeng.com/wiki/896043488029600] but modified.
-- [(git flow tutorial)][https://git-flow.readthedocs.io/en/latest/presentation.html]
+- [git tutorial](https://www.liaoxuefeng.com/wiki/896043488029600) but updated with my preferences.
+- [git flow tutorial](https://git-flow.readthedocs.io/en/latest/presentation.html)
 
 Git is a distributed version control system.
 Git is free software distributed under the GPL.
@@ -14,7 +14,7 @@ Git tracks changes of files.
 
 If start with a local repository:
 
-```git
+```bash
 mkdir learngit
 cd learngit
 git flow init
@@ -22,21 +22,21 @@ git flow init
 
 If start with a remote repository:
 
-```git
+```bash
 git clone git@github.com:{github_username}/repository.git # by SSH (faster)
 git clone https://github.com/{github_username}/repository.git  # by http
 ```
 
 ## Add commit
 
-```git
+```bash
 git add README.md
 git commit -m 'update the readme file'
 ```
 
 After `-m` we can write down the commit message
 
-## check the status
+## Check the status
 
 - `git status` to  get a review of the whole repository
 - `git diff <filename>` to check the unstaged changes from the lastest version
@@ -46,7 +46,7 @@ Remeber to use `q` to quit git log view.
 If you quit with a abnormal command as `ctrt+C`, then your input will not show on the screen for ever.
 To solve this, input `reset` to reload git bash.
 
-## reset version
+## Reset version
 
 - `git reset HEAD^` return to the previous version
 - `git reset commit_id` to reset a specific commit version
@@ -72,15 +72,15 @@ But you could search `local history` if you use VScode or some IDEs store the lo
 - `git remote add {github_username} git@github.com:{github_username}/repository.git` to add a new remote by SSH
 - `git push origin dev`, with your remote_name and remote_branch_name
 
-## gitignore
+## Gitignore
 
 - When you could not add a commit, `git check-ignore <filepath>` to check if a file is ignored by `.gitignore`
 
-## config
+## Config
 
 - `git config --global alias.co checkout` to set `checkout` as `co` for usage
 
-## git flow
+## Git flow
 
 - `git flow init` to start
 
